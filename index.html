@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla inicial -->
+    <div id="startScreen" class="screen">
+        <h1>¡Adivina el Número!</h1>
+        <button id="startButton">Iniciar</button>
+    </div>
+
+    <!-- Pantalla del juego -->
+    <div id="gameScreen" class="screen" style="display: none;">
+        <div class="container">
+            <h1>Adivina el Número</h1>
+            <p>Introduce un número entre 1 y 100:</p>
+            <input type="number" id="guessInput" min="1" max="100">
+            <button id="guessButton">Adivinar</button>
+            <p id="message"></p>
+            <p id="previousGuesses"></p>
+            <button id="resetButton" style="display: none;">Reiniciar Juego</button>
+        </div>
+    </div>
+
+    <!-- Pantalla de Game Over -->
+    <div id="gameOverScreen" class="screen" style="display: none;">
+        <h1>¡Game Over!</h1>
+        <p id="finalMessage"></p>
+        <button id="restartButton">Jugar de nuevo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
